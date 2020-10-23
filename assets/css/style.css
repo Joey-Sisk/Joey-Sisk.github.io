@@ -1,4 +1,4 @@
-:root {
+:root { /* there is a consistant color and font theme throughout the page establashed here */
     --independence: #383B53;
     --deepBlue: #2a2a49;
     --darkElectricBlue: #66717E;
@@ -15,7 +15,7 @@
     margin: 0;
 }
 
-html {
+html { /* rem is used whenever possible to size text */
     font-size: 62.5%;
 }
 
@@ -66,7 +66,7 @@ img {
     border-radius: 20px;
 }
   
-header {
+header { /* The layout of the header changes slightly with media queies to move the nav right on phones and narrow browsers */
     background-color: var(--independence);
     color: var(--aeroBlue);
     font-family: var(--titleFont);
@@ -98,7 +98,7 @@ header a {
     clear: both;
 }
 
-.aboutMe {
+.aboutMe { /* left and right padding used here to keep the text in line with the project cards */
     background-color: var(--independence);
     color: var(--aeroBlue);
     font-family: var(--fancyFont);
@@ -108,8 +108,8 @@ header a {
     text-align: center;
 }
 
-.headshotContain {
-    height: 50rem;
+.headshotContain { /* this image keeps it height but zooms the image to keep it in shot without forcing the user to scroll */
+    height: 500px;
     width: 100%;
     background-image: url("../images/headshot.png");
     background-size: cover;
@@ -117,9 +117,9 @@ header a {
     border-radius: 0;
 }
 
-main {
+main { /* toe primary div holding the project cards */
     background-color: var(--darkElectricBlue);
-    padding: 3rem;
+    padding: 30px;
 }
 
 main h2, div h2 {
@@ -128,14 +128,14 @@ main h2, div h2 {
     text-align: center;
 }
 
-Figure h2 {
+figure h2 { /* the project titles are kept in their own location just above the images to improve readability and keep the layout simple */
     background-color: var(--deepBlue);
     border-radius: 20px;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-div figure {
+div figure { /* the images and their containers share the same rounded corners */
     background-color: var(--independence);
     border-radius: 20px;
 }
@@ -150,13 +150,13 @@ div figure {
     transition: 0.25s ease-in-out;
 }
 
-.feature {
+.feature { /* this acts as the container for the feature project */
     height: auto;
     width: auto;
     padding: 1.5rem;
 }
 
-.featureImage {
+.featureImage { /* this is the contents tag for the feature project */
     max-height: 550px;
     object-fit: cover;
 }
@@ -242,7 +242,7 @@ textarea {
     color: var(--aeroBlue);
 }
 
-footer {
+footer { /* the footer uses almost identicle styling as the header, some spacing is adapted to make it look nicer at the bottom and media queries are not necessary as the links never bunch up as bad as the top nav links */
     background-color: var(--independence);
     color: var(--aeroBlue);
     font-family: var(--titleFont);
