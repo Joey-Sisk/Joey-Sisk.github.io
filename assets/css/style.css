@@ -188,60 +188,6 @@ div figure { /* the images and their containers share the same rounded corners *
     padding: 2rem;
 }
 
-/* contact form from Zach Saucier on Codepen: https://codepen.io/ZachSaucier/pen/AIJpe */
-
-form { 
-    max-width:420px; margin:50px auto; 
-}
-
-.feedback-input {
-    color: var(--mintCream);
-    font-family: var(--fancyFont);
-    font-weight:500;
-    font-size: 1.8rem;
-    border-radius: 5px;
-    line-height: 2.2rem;
-    background-color: transparent;
-    border:2px solid (var(--deepBlue));
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
-    width:100%;
-    box-sizing: border-box;
-    outline:0;
-}
-
-.feedback-input:focus { 
-    border:2px solid #CC4949; 
-}
-
-textarea {
-    height: 15rem;
-    line-height: 150%;
-    resize:vertical;
-}
-
-[type="submit"] {
-    font-family: var(--titleFont)
-    width: 100%;
-    background: (var(--mintCream));
-    border-radius:5px;
-    border:0;
-    cursor:pointer;
-    color:white;
-    font-size:24px;
-    padding-top:10px;
-    padding-bottom:10px;
-    transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
-}
-
-[type="submit"]:hover { 
-    background: (var(--deepBlue));
-    color: var(--aeroBlue);
-}
-
 footer { /* the footer uses almost identicle styling as the header, some spacing is adapted to make it look nicer at the bottom and media queries are not necessary as the links never bunch up as bad as the top nav links */
     background-color: var(--independence);
     color: var(--aeroBlue);
