@@ -3,9 +3,9 @@
 ## Table of Contents
 The following readme contains these sections:
 
-* Usage
-* Link to Site
-* License
+* [Usage](#Usage)
+* [Live-Link](#Live-Link)
+* [License](#License)
 
 ## Usage
 
@@ -17,7 +17,7 @@ The following readme contains these sections:
 
 
 
-## Link to Live Site
+## Live-Link
 
 [You can find a link to the live site here.](https://fuddafudda.github.io/SecondWeekPortfolioHomework/)
 
