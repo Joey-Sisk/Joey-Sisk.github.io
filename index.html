@@ -1,108 +1,248 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joey Sisk Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-
-    <header class="clearfix">        
-        <h1>
-        Joey Sisk
-        </h1>
-        
-        <nav> <!-- this nav bar should list out as a row underneath the title, but move to the right side as a column in row with the title on mobile devices and narrow windows. -->
-        <ul>
-            <li>
-            <a href="#aboutMe">About Me</a>
-            </li>
-            <li>
-            <a href="#projects">Live Projects</a>
-            </li>
-            <li>
-            <a href="#links">Links</a>
-            </li>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div
+      id="navBar"
+      class="nav-color o-80 fixed inline tc tl-l w-100 ph3 pv3 pv4-ns ph4-m ph5-l zTop"
+    >
+      <nav class="f5 fw6 ttu tracked">
+        <ul id="navList" class="list">
+          <li class="dib">
+            <a class="link dim white dib mr3 avenir" href="#header" title="Home"
+              >Home</a
+            >
+          </li>
+          <li class="dib">
+            <a
+              class="link dim white dib mr3 avenir"
+              href="#projects"
+              title="About"
+              >Projects</a
+            >
+          </li>
+          <li class="dib">
+            <a class="link dim white dib avenir" href="#contact" title="Contact"
+              >Contact</a
+            >
+          </li>
         </ul>
-        </nav>        
-    </header>
-
-    <figure class="headshotContain" alt="leaning against a fence wearing a hat"> <!-- main homepage image, stays in frame regardless of size -->
-    </figure>
-
-    <div id="aboutMe" class="aboutMe"> <!-- A quick summarized about me -->
-        <h2>About Me</h2>
-        <p>I am a student web developer, musician, artist, and technician working in and around Austin, TX. I've had the good fortune of performing with some of the best musicians in the Austin area over the last 9 years. During the past 9 years I've worked a variety of jobs from delivering pizzas to working in a construction related technical field. I've recently turned down a new path in order to better myself by signing up for UT's full stack development course and learning JavaScript as well as many of the supporting systems related to it.</p>
+      </nav>
     </div>
-    
-    <main id="projects">
-        
-        <section> <!-- this card is in a seperate section in order to keep it above the rest of the projects and allow it to take up the width of the page -->
-            <div>
-                <figure class="feature card">
-                    <h2>Calculator</h2>
-                    <a href="https://en.wikipedia.org/wiki/Calculator">
-                        <img src="./assets/images/abstractShattered.png" alt="abstract image of a circle and broken lines" class="featureImage effect">         
-                    </a>
-                </figure>
-            </div>
-        </section>
-      
-        <br>
 
-        <section class="row justify-center"> <!-- this contains the rest of the project cards. There are three right now, but as many as are needed could be added. -->
+    <div id="keepAllCentered">
+      <!-- Header -->
+      <header
+        id="header"
+        class="mw-100 mh4 h-100 pt6-l pt4 halfHeight sectionDivs"
+      >
+        <div class="mw-100 fl w-60-l">
+          <h1 class="title-text tc f-headline lh-solid">Joey Sisk</h1>
+        </div>
+        <div class="mw-100 mb1-l mb4 fl w-40-l">
+          <img
+            src="./assets/images/headshot.png"
+            alt="Headshot"
+            id="headerImg"
+            class="gradient-border"
+          />
+        </div>
+      </header>
 
-            <div class="card-column"> <!-- the images currently dont relate to the content of project links, but these are all placeholders as the projects are not completed -->
-                <figure class="card code-card">
-                    <h2>Password Generator</h2>
-                    <a href="https://en.wikipedia.org/wiki/Password">
-                        <img src="./assets/images/abstractLeaf.png" alt="abstract image featuring a leaf and red stars" class="effect">
-                    </a>
-                </figure>
-            </div>
+      <hr class="grad-line" />
 
-            <div class="card-column">
-                <figure class="card code-card">
-                    <h2>Weather Dashboard</h2>
-                    <a href="https://en.wikipedia.org/wiki/Weather">
-                        <img src="./assets/images/abstractGrey.png" alt="abstract image of grey boxes and lines" class="effect">
-                    </a>
-                </figure>
-            </div>
+      <!-- Section A -->
+      <div class="mw-100 halfHeight sectionDivs">
+        <div class="flex items-center justify-around">
+          <div class="mw-100 fl w-20-l">
+            <a
+              href="https://www.linkedin.com/in/joey-sisk-8933b548/"
+              class="fa fa-linkedin ma4 dim"
+            ></a>
+          </div>
+          <div class="mw-100">
+            <a
+              href="https://github.com/Joey-Sisk"
+              class="fa fa-github ma4 dim"
+            ></a>
+          </div>
+        </div>
 
-            <div class="card-column">
-                <figure class="card code-card">
-                    <h2>Day Planner</h2>
-                    <a href="https://en.wikipedia.org/wiki/Personal_organizer">
-                        <img src="./assets/images/mapOfNowhere.png" alt="top down map of fictional islands" class="effect">
-                    </a>                   
-                </figure>
-            </div>
+        <div class="mw-100 flex items-center justify-around">
+          <p class="measure-wide avenir tc f4 lh-copy">
+            I am a student web developer, musician, artist, and technician
+            working in and around Austin, TX. I've had the good fortune of
+            performing with some of the best musicians in the Austin area over
+            the last 9 years. I've recently turned down a new path in order to
+            better myself by signing up for UT's full stack development course
+            and learning JavaScript as well as many of the supporting systems
+            related to it.
+          </p>
+        </div>
+      </div>
 
-        </section>
-    </main>    
+      <hr class="grad-line" />
 
-    <footer id="links"> <!-- these are all live links to my business related media accounts and my personal website which mostly is dedicated to my music -->
-        <nav>       
-            <ul>
-                <li>
-                <a href="https://github.com/fuddafudda/">GitHub</a>
-                </li>
-                <li>
-                <a href="https://www.linkedin.com/in/joey-sisk-8933b548/">LinkedIn</a>
-                </li>
-                <li>
-                <a href="https://www.joeysisk.com/">Homepage</a>
-                </li>
-            </ul>        
-        </nav>    
-    </footer>
+      <!-- Section B -->
+      <main id="projects" class="ph4-l ph3 pt6-l pt5 mb2-l sectionDivs">
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://quiet-inlet-97625.herokuapp.com/"
+            ><img
+              src="./assets/images/burger.jpg"
+              alt="Eat the Burger"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">Eat the Burger</h2>
+          <p class="measure avenir tc lh-title">
+            A fun little application that allows the user to enter the name of a
+            burger and then press a button to "devour" the burger moving it on
+            the page.
+          </p>
+        </div>
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://joey-sisk.github.io/WorkDayScheduler/"
+            ><img
+              src="./assets/images/schedule.jpg"
+              alt="Work Day Scheduler"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">Workday Scheduler</h2>
+          <p class="measure avenir tc lh-title">
+            A handy scheduler for planning out your workday. remember your daily
+            tasks and knows how far into your work day you currently are.
+          </p>
+        </div>
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://joey-sisk.github.io/WeatherDashboard/"
+            ><img
+              src="./assets/images/weatherApp.jpg"
+              alt="Weather Dashboard"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">Weather Dashboard</h2>
+          <p class="measure avenir tc lh-title">
+            An in browser weather application that will accept a location and
+            output weather for your location and for the next 5 days.
+          </p>
+        </div>
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://joey-sisk.github.io/OnStage/"
+            ><img
+              src="./assets/images/onStage.jpg"
+              alt="onStage"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">OnStage Events</h2>
+          <p class="measure avenir tclh-title">
+            A resource for researching bands and upcoming events. Shows
+            location, some upcoming gigs, and the months bands are most active.
+          </p>
+        </div>
+      </main>
 
-</body>
+      <!-- Section C -->
+      <div id="contact" class="halfHeight sectionDivs">
+        <div class="mw-100 flex items-center vert-center fl w50-l">
+          <article class="black-80">
+            <form
+              action="https://formspree.io/f/xleowywe"
+              method="POST"
+              accept-charset="utf-8"
+            >
+              <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+                <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
+                <div class="mt3">
+                  <label
+                    class="db fw4 avenir lh-copy f6"
+                    name="_replyto"
+                    for="email-address"
+                    >Email address</label
+                  >
+                  <input
+                    class="pa2 avenir input-reset ba bg-transparent w-100 measure"
+                    type="email"
+                    name="email-address"
+                    id="email-address"
+                  />
+                </div>
+                <div class="mt3">
+                  <label class="db fw4 avenir lh-copy f6" for="password"
+                    >Message</label
+                  >
+                  <input
+                    class="pa2 h3 avenir input-reset ba bg-transparent"
+                    name="message"
+                    type="Message"
+                    name="Message"
+                    id="message"
+                  />
+                </div>
+              </fieldset>
+              <div class="mt3">
+                <input
+                  class="b ph3 pv2 avenir input-reset ba b--black grow pointer f6"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
+            </form>
+          </article>
+        </div>
+
+        <div class="mw-100 flex items-center">
+          <p class="measure avenir tc f4 lh-copy">
+            My studies really took off when I began attending the UT Austin
+            coding bootcamp but I've been spending my time learning and devoping
+            for a long time. Ever since I started down this path I have found so
+            much gratification and enjoyment from expanding my skillset and
+            using the knowledge I've gained along the way.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
