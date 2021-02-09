@@ -1,11 +1,5 @@
 :root {
-  /* style 1 */
-  --aero: #7fb7ddff;
-  --pink-lavender: #d6accaff;
-  --liberty: #4f559aff;
-  --xiketic: #000210ff;
-
-  /* style 2 */
+  /* colors */
   --blue-sapphire: #246a90ff;
   --illuminating-emerald: #3d8d6cff;
   --olive-drab-7: #433b27ff;
@@ -13,25 +7,8 @@
   --sugar-plum: #974f7bff;
   --lavender-gray: #b8b1c8ff;
   --sky-blue-crayola: #59d7eeff;
-
-  /* style 3 */
-  --maximum-blue-purple: #aab8edff;
   --laurel-green: #a8ba8cff;
-  --xiketic: #080217ff;
-  --french-lilac: #755886ff;
-
-  /* old colors */
-  --darkMain: #00449e;
-  --textMain: #357edd;
-  --lightMain: #96ccff;
-  --background1: #f6fffe;
-  --background2: #fffceb;
-  --background3: #e8fdf5;
-  --background4: #ffdfdf;
-  --unsaturated1: #bdc7ee;
-  --unsaturated2: #8e96c7;
-  --saturated: #da5e58;
-  --light: #f6d0a9;
+    --french-lilac: #755886ff;
 
   /* fonts */
   --title-font: 'Jost', sans-serif;
@@ -104,10 +81,6 @@ h2 {
 
 .fullHeight {
   opacity: 1;
-}
-
-.vert-center {
-  
 }
 
 .title-text {
