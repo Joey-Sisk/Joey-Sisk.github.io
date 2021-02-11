@@ -42,7 +42,7 @@
     <!-- Nav Bar -->
     <div
       id="navBar"
-      class="nav-color o-80 fixed inline tc tl-l w-100 ph3 pv3 pv4-ns ph4-m ph5-l zTop"
+      class="nav-color o-80 fixed inline tc w-100 ph3 pv3 pv4-ns ph4-m zTop"
     >
       <nav class="f5 fw6 ttu tracked">
         <ul id="navList" class="list">
@@ -51,6 +51,7 @@
               >Home</a
             >
           </li>
+
           <li class="dib">
             <a
               class="link dim white dib mr3 avenir"
@@ -59,9 +60,15 @@
               >Projects</a
             >
           </li>
+
           <li class="dib">
             <a class="link dim white dib avenir" href="#contact" title="Contact"
               >Contact</a
+            >
+          </li>
+          <li class="dib">
+            <a class="link dim white dib avenir pl3" href="https://drive.google.com/file/d/1zBSlEa95rZAptfWuh8rFt5plk1W7gT2t/view?usp=sharing" title="Resume"
+              >Resume</a
             >
           </li>
         </ul>
@@ -70,14 +77,11 @@
 
     <div id="keepAllCentered">
       <!-- Header -->
-      <header
-        id="header"
-        class="mw-100 mh4 h-100 pt6-l pt4 halfHeight sectionDivs"
-      >
-        <div class="mw-100 fl w-60-l">
+      <header id="header" class="mw-100 mh4 h-100 pt6 sectionDivs">
+        <div class="mw-100 fl">
           <h1 class="title-text tc f-headline lh-solid">Joey Sisk</h1>
         </div>
-        <div class="mw-100 mb1-l mb4 fl w-40-l">
+        <div class="mw-100 mb4 fl">
           <img
             src="./assets/images/headshot.png"
             alt="Headshot"
@@ -90,9 +94,9 @@
       <hr class="grad-line" />
 
       <!-- Section A -->
-      <div class="mw-100 halfHeight sectionDivs">
+      <div class="mw-100 sectionDivs">
         <div class="flex items-center justify-around">
-          <div class="mw-100 fl w-20-l">
+          <div class="mw-100 fl">
             <a
               href="https://www.linkedin.com/in/joey-sisk-8933b548/"
               class="fa fa-linkedin ma4 dim"
@@ -122,65 +126,57 @@
       <hr class="grad-line" />
 
       <!-- Section B -->
-      <main id="projects" class="ph4-l ph3 pt6-l pt5 mb2-l sectionDivs">
-        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
-          <a href="https://quiet-inlet-97625.herokuapp.com/"
+      <main id="projects" class="ph3 pt5 sectionDivs">
+        <div class="mw-100 h-100 fl w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://dungeon-scribe.herokuapp.com/"
             ><img
-              src="./assets/images/burger.jpg"
-              alt="Eat the Burger"
-              class="mw-100 grow"
-          /></a>
-          <h2 class="avenir tc bt bl br br4 br--top">Eat the Burger</h2>
+              src="./assets/images/dungeonScribe.jpg"
+              alt="Dungeon Scribe"
+              class="mw-100 grow img-size"
+            />
+            <!-- Photo by https://unsplash.com/@birminghammuseumstrust?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Birmingham Museums Trust -->
+          </a>
+          <h2 class="avenir tc bt bl br br4 br--top">Dungeon Scribe</h2>
           <p class="measure avenir tc lh-title">
-            A fun little application that allows the user to enter the name of a
-            burger and then press a button to "devour" the burger moving it on
-            the page.
+            This application assists with combat tracking for DnD by using a
+            group chat application with a built in dice roller.
           </p>
         </div>
-        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+        <div class="mw-100 h-100 fl w-50-m pa1 mw6" data-aos="zoom-in">
           <a href="https://joey-sisk.github.io/WorkDayScheduler/"
             ><img
               src="./assets/images/schedule.jpg"
               alt="Work Day Scheduler"
-              class="mw-100 grow"
-          /></a>
+              class="mw-100 grow img-size"
+            />
+            <!-- Photo by https://unsplash.com/@the_average_tech_guy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText The Average Tech Guy -->
+          </a>
           <h2 class="avenir tc bt bl br br4 br--top">Workday Scheduler</h2>
           <p class="measure avenir tc lh-title">
             A handy scheduler for planning out your workday. remember your daily
             tasks and knows how far into your work day you currently are.
           </p>
         </div>
-        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+        <div class="mw-100 h-100 fl w-50-m pa1 mw6" data-aos="zoom-in">
           <a href="https://joey-sisk.github.io/WeatherDashboard/"
             ><img
               src="./assets/images/weatherApp.jpg"
               alt="Weather Dashboard"
-              class="mw-100 grow"
-          /></a>
+              class="mw-100 grow img-size"
+            />
+            <!-- Photo by https://unsplash.com/@allecgomes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Allec Gomes -->
+          </a>
           <h2 class="avenir tc bt bl br br4 br--top">Weather Dashboard</h2>
           <p class="measure avenir tc lh-title">
             An in browser weather application that will accept a location and
             output weather for your location and for the next 5 days.
           </p>
         </div>
-        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
-          <a href="https://joey-sisk.github.io/OnStage/"
-            ><img
-              src="./assets/images/onStage.jpg"
-              alt="onStage"
-              class="mw-100 grow"
-          /></a>
-          <h2 class="avenir tc bt bl br br4 br--top">OnStage Events</h2>
-          <p class="measure avenir tclh-title">
-            A resource for researching bands and upcoming events. Shows
-            location, some upcoming gigs, and the months bands are most active.
-          </p>
-        </div>
       </main>
 
       <!-- Section C -->
-      <div id="contact" class="halfHeight sectionDivs">
-        <div class="mw-100 flex items-center vert-center fl w50-l">
+      <div id="contact" class="sectionDivs section-c-background pb4 br4 mh3">
+        <div class="mw-100 flex items-center vert-center fl">
           <article class="black-80">
             <form
               action="https://formspree.io/f/xleowywe"
@@ -188,6 +184,7 @@
               accept-charset="utf-8"
             >
               <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+                <p class="measure avenir tc lh-title">Contact Me</p>
                 <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
                 <div class="mt3">
                   <label
@@ -218,7 +215,7 @@
               </fieldset>
               <div class="mt3">
                 <input
-                  class="b ph3 pv2 avenir input-reset ba b--black grow pointer f6"
+                  class="b ph3 pv2 avenir input-reset bg-dark-gray white ba br4 grow pointer f6"
                   type="submit"
                   value="Submit"
                 />
@@ -238,6 +235,8 @@
         </div>
       </div>
     </div>
+
+    <br class="ma6 h3" />
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

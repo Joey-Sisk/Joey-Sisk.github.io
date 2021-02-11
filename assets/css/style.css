@@ -8,10 +8,11 @@
   --lavender-gray: #b8b1c8ff;
   --sky-blue-crayola: #59d7eeff;
   --laurel-green: #a8ba8cff;
-    --french-lilac: #755886ff;
+  --french-lilac: #755886ff;
+  --laurel-green-transparant: #a8ba8c50;
 
   /* fonts */
-  --title-font: 'Jost', sans-serif;
+  --title-font: "Jost", sans-serif;
 }
 
 body {
@@ -27,6 +28,10 @@ p {
   color: var(--olive-drab-7);
 }
 
+label {
+  color: var(--olive-drab-7);
+}
+
 h2 {
   color: var(--olive-drab-7);
 }
@@ -37,14 +42,28 @@ h2 {
   justify-content: space-around;
 }
 
+.section-c-background {
+  background-color: var(--laurel-green-transparant);
+}
+
 .gradient-border {
-  background-image: linear-gradient(45deg, var(--sugar-plum), var(--gold-crayola));
+  background-image: linear-gradient(
+    45deg,
+    var(--sugar-plum),
+    var(--gold-crayola)
+  );
   border-radius: 16px;
   padding: 10px;
 }
 
 .nav-color {
   background-color: var(--olive-drab-7);
+}
+
+.img-size {
+  height: 320px;
+  width: 320px;
+  overflow: hidden;
 }
 
 .grad-line {
@@ -73,14 +92,6 @@ h2 {
 .fa-github {
   background: #242424;
   color: white;
-}
-
-.halfHeight {
-  opacity: 1;
-}
-
-.fullHeight {
-  opacity: 1;
 }
 
 .title-text {
