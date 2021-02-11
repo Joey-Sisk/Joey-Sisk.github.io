@@ -1,248 +1,140 @@
-:root { /* there is a consistant color and font theme throughout the page establashed here */
-    --independence: #383B53;
-    --deepBlue: #2a2a49;
-    --darkElectricBlue: #66717E;
-    --aeroBlue: #C2E7DA;
-    --mintCream: #EBF5EE;
-    --titleFont: "Lucida Console", Monaco, monospace;
-    --fancyFont: Verdana, Geneva, sans-serif;
-    --bodyFont: Georgia, "Times New Roman", Times, serif;
-}
+:root {
+  /* colors */
+  --blue-sapphire: #246a90ff;
+  --illuminating-emerald: #3d8d6cff;
+  --olive-drab-7: #433b27ff;
+  --gold-crayola: #eec784ff;
+  --sugar-plum: #974f7bff;
+  --lavender-gray: #b8b1c8ff;
+  --sky-blue-crayola: #59d7eeff;
+  --laurel-green: #a8ba8cff;
+    --french-lilac: #755886ff;
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html { /* rem is used whenever possible to size text */
-    font-size: 62.5%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-bottom: 0.625rem;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-h2 {
-    font-size: 3.5rem;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-h4 {
-    font-size: 2.5rem;
-}
-
-h5 {
-    font-size: 2rem;
-}
-
-h6 {
-    font-size: 1.5rem;
-}
-
-p {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
+  /* fonts */
+  --title-font: 'Jost', sans-serif;
 }
 
 body {
-    font-family: var(--bodyFont);
-    line-height: 1.5;
+  background-image: linear-gradient(
+    135deg,
+    var(--lavender-gray),
+    var(--laurel-green),
+    var(--french-lilac)
+  );
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-}
-  
-header { /* The layout of the header changes slightly with media queies to move the nav right on phones and narrow browsers */
-    background-color: var(--independence);
-    color: var(--aeroBlue);
-    font-family: var(--titleFont);
-    padding: 2.2rem;
+p {
+  color: var(--olive-drab-7);
 }
 
-header h1 {
-    font-size: 10rem;
-    text-align: center;
+h2 {
+  color: var(--olive-drab-7);
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 15px;
-    font-size: 2rem;
+.sectionDivs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-header a {
-    color: var(--aeroBlue);
-    font-family: var(--bodyFont);
-    font-size: 2.4rem;
+.gradient-border {
+  background-image: linear-gradient(45deg, var(--sugar-plum), var(--gold-crayola));
+  border-radius: 16px;
+  padding: 10px;
 }
 
-.clearfix::after {
-    content: " ";
-    display: block;
-    clear: both;
+.nav-color {
+  background-color: var(--olive-drab-7);
 }
 
-.aboutMe { /* left and right padding used here to keep the text in line with the project cards */
-    background-color: var(--independence);
-    color: var(--aeroBlue);
-    font-family: var(--fancyFont);
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
+.grad-line {
+  background: linear-gradient(45deg, var(--sugar-plum), var(--gold-crayola));
+  height: 4px;
+  border: none;
+  border-radius: 50%;
 }
 
-.headshotContain { /* this image keeps it height but zooms the image to keep it in shot without forcing the user to scroll */
-    height: 500px;
-    width: 100%;
-    background-image: url("../images/headshot.png");
-    background-size: cover;
-    background-position: center;
-    border-radius: 0;
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+  display: inline;
 }
 
-main { /* toe primary div holding the project cards */
-    background-color: var(--darkElectricBlue);
-    padding: 30px;
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 
-main h2, div h2 {
-    font-family: var(--titleFont);
-    color: var(--aeroBlue);
-    text-align: center;
+.fa-github {
+  background: #242424;
+  color: white;
 }
 
-figure h2 { /* the project titles are kept in their own location just above the images to improve readability and keep the layout simple */
-    background-color: var(--deepBlue);
-    border-radius: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+.halfHeight {
+  opacity: 1;
 }
 
-div figure { /* the images and their containers share the same rounded corners */
-    background-color: var(--independence);
-    border-radius: 20px;
+.fullHeight {
+  opacity: 1;
 }
 
-.card {
-    -webkit-filter: sepia(0%);
-    transition: 0.25s ease-in-out;
+.title-text {
+  font-family: var(--title-font);
+  color: var(--olive-drab-7);
 }
 
-.card:hover .effect {
-    -webkit-filter: sepia(40%);
-    transition: 0.25s ease-in-out;
+.zTop {
+  z-index: 10;
 }
 
-.feature { /* this acts as the container for the feature project */
-    height: auto;
-    width: auto;
-    padding: 1.5rem;
+#skills {
+  background-image: linear-gradient(var(--unsaturated1), var(--unsaturated2));
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.featureImage { /* this is the contents tag for the feature project */
-    max-height: 550px;
-    object-fit: cover;
+#headerImg {
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+#personalWebsiteLinkImage {
+  height: 300px;
+  width: 300px;
 }
 
-.justify-center {
-    justify-content: center;
+#keepAllCentered {
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
-.card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
+#navBar {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
 }
 
-.code-card {
-    color: var(--mintCream);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
+#navList {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-footer { /* the footer uses almost identicle styling as the header, some spacing is adapted to make it look nicer at the bottom and media queries are not necessary as the links never bunch up as bad as the top nav links */
-    background-color: var(--independence);
-    color: var(--aeroBlue);
-    font-family: var(--titleFont);
-    padding: 20px;
-}
-  
-footer nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2rem;
-}
-  
-footer nav ul li {
-    padding: 0px;
-}
-  
-footer a {
-    color: var(--aeroBlue);
-    font-family: var(--bodyFont);
-    font-size: 2.4rem;
-}
-
-@media screen and (min-width: 768px) {
-    .card-column {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-  
-    .card-column:last-child {
-        flex-grow: 1;
-    }
-}
-
-@media screen and (min-width: 992px) {
-  
-    .card-column {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }  
-}
-
-@media screen and (max-width: 768px) {
-    header h1 {
-        width: 65%;
-        float: left;
-    }
-
-    header nav ul {
-        list-style: none;
-        display: inline;
-        width: 25%;
-        float: right;
-        white-space: nowrap;
-        margin-right: 6px;
-    }
+@media screen and (min-width: 60em) {
+  .sectionDivs {
+    flex-wrap: nowrap;
+  }
+  .fullHeight {
+    height: 100vh;
+  }
+  .halfHeight {
+    height: 50vh;
+  }
 }
