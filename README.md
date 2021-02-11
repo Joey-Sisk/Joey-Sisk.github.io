@@ -9,7 +9,7 @@ The following readme contains these sections:
 
 ## Usage
 
-![Top of Portfolio Page Screenshot](./assets/images/sreenshot.png)
+![Top of Portfolio Page Screenshot](./assets/images/screenshot.png)
 
 ![Body of Portfolio Page Screenshot](./assets/images/screenshot.png)
 
